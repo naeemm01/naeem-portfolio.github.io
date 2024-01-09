@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Certifications</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #111;
+      color: cyan;
+      overflow-x: hidden;
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .certification-card {
+      margin: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      background-color: black;
+      border-radius: 20px;
+      max-width: 300px;
+    }
+
+    .certification-card:hover {
+      transform: scale(1.05);
+    }
+
+    .certification-icon {
+      font-size: 40px; /* Adjust the size as needed */
+    }
+
+    .btn-view-certification {
+      background-color: yellow;
+      color: #111;
+      border-radius: 10px;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      display: block;
+      margin-top: 10px;
+    }
+
+    .btn-view-certification:hover {
+      background-color: #ffeb3b;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Certification Cards -->
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="certification-card">
+          <i class="fas fa-certificate certification-icon"></i>
+          <div class="card-body">
+            <h5 class="card-title">Website designing</h5>
+            <button class="btn btn-view-certification" onclick="viewCertification('certificates/website designing.pdf')">View Certificate</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="certification-card">
+          <i class="fas fa-certificate certification-icon"></i>
+          <div class="card-body">
+            <h5 class="card-title">How to get into Web</h5>
+            <button class="btn btn-view-certification" onclick="viewCertification('certificates/University of leeds.pdf')">View Certificate</button>
+          </div>
+        </div>
+      </div>
+        <div class="col-md-4">
+        <div class="certification-card">
+          <i class="fas fa-certificate certification-icon"></i>
+          <div class="card-body">
+            <h5 class="card-title">Code Yourself</h5>
+            <button class="btn btn-view-certification" onclick="viewCertification('certificates/Code Yourself by University of Edinburg.pdf')">View Certificate</button>
+          </div>
+        </div>
+      </div>
+  <div class="col-md-4">
+        <div class="certification-card">
+          <i class="fas fa-certificate certification-icon"></i>
+          <div class="card-body">
+            <h5 class="card-title">Meta frontend</h5>
+            <button class="btn btn-view-certification" onclick="viewCertification('certificates/Meta frontend.pdf')">View Certificate</button>
+          </div>
+        </div>
+      </div>
+  <div class="col-md-4">
+        <div class="certification-card">
+          <i class="fas fa-certificate certification-icon"></i>
+          <div class="card-body">
+            <h5 class="card-title">Google Seo</h5>
+            <button class="btn btn-view-certification" onclick="viewCertification('certificates/Google Seo by California.pdf')">View Certificate</button>
+          </div>
+        </div>
+      </div>
+  <div class="col-md-4">
+        <div class="certification-card">
+          <i class="fas fa-certificate certification-icon"></i>
+          <div class="card-body">
+            <h5 class="card-title">Web design</h5>
+            <button class="btn btn-view-certification" onclick="viewCertification('certificates/TEVTA certificate_1.pdf')">View Certificate</button>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Add more certification cards as needed -->
+
+    </div>
+  </div>
+
+ <script>
+  function viewCertification(pdfSrc) {
+    window.location.href = pdfSrc;
+  }
+</script>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
